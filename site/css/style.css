@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Barrio');
+body {
+	font-family: 'Montserrat', sans-serif;
+	padding:0;
+	margin:0;
+	font-size:16px;
+	background-color:#c40028;
+	color:#fff;
+}
+#header-nav {
+	border-radius:0;
+	border:0;
+	background-color:#114996;
+}
+#logo {
+	background:url('../images/Logo_Superman.png') no-repeat center;
+	height:150px;
+	width:200px;
+	margin:15px 15px 15px 0;
+}
+#collapse-nav{
+	border-color:#c40028;
+}
+.navbar-brand h1 {
+	font-family: 'Barrio', cursive;
+	margin-top:0;
+	font-size:2em;
+	font-weight:bold;
+	color:#c40028;
+  text-shadow: 1px 1px 3px;
+	transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  -o-transition:.4s;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration:none;
+}
+#nav-list {
+	margin-top:10px;
+}
+#nav-list li {
+	text-align:center;
+}
+#nav-list li a {
+	color:#c40028;
+  text-shadow: 1px 1px 3px;
+}
+#nav-list li a:hover {
+	color:#ffeb00;
+	background-color:#c40028;
+  text-shadow: 0 0 0;
+}
+#collapse-nav span{
+	font-size:1.2em;
+}
+#header-nav .navbar-toggle {
+	border:2px solid #ffeb00;
+}
+#header-nav .navbar-toggle:hover, #header-nav .navbar-toggle:focus {
+	background-color:#c40028;
+}
+#header-nav .navbar-toggle .icon-bar {
+	background-color:#ffeb00;
+}
+.container .jumbotron {
+	width:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	border:1px solid #888;
+	box-shadow:0 0 20px #888;
+	-webkit-box-shadow:0 0 20px #888;
+	-moz-box-shadow:0 0 20px #888;
+}
+#super, #justice, #enemies {
+	position:relative;
+	height:250px;
+	width:100%;
+	background-repeat:no-repeat;
+	background-position:center;
+	overflow:hidden;
+}
+#super:hover, #justice:hover, #enemies:hover {
+	box-shadow:0 0 10px #ddd;
+	-moz-box-shadow:0 0 10px #ddd;
+	-webkit-box-shadow:0 0 10px #ddd;
+}
+#super {
+	background-image:url('../images/Superman_list.jpg');
+}
+#justice {
+	background-image:url('../images/justice_league_list.jpg');
+}
+#enemies {
+	background-image:url('../images/enemies.jpg');
+}
+#super span, #justice span, #enemies span {
+	position:absolute;
+	bottom:0;
+	left:0;
+	color:#fff;
+	font-size:1.2em;
+	line-height:1.8em;
+	background:rgba(0,0,0,.8);
+	width:100%;
+	text-align:center;
+}
+.panel-footer {
+	background-color:#114996;
+	border:0;
+	padding-bottom:20px;
+	padding-top:20px;
+	margin-top:30px;
+}
+.panel-footer span {
+	font-size:.8em;
+}
+/***** Large Device *****/
+@media (min-width:1200px) {
+	.navbar-brand h1:hover{
+		font-size:2.4em;
+	}
+	.container .jumbotron {
+		background-image:url('../images/Image_Header_1200.jpg');
+		height:675px;
+	}
+}
+
+/***** Medium Device *****/
+@media (min-width:992px) and (max-width:1199px) {
+	.container .jumbotron {
+		background-image:url('../images/Image_Header_992.jpg');
+		height:558px;
+	}
+}
+/***** Small Device *****/
+@media (min-width:768px) and (max-width:991px) {
+	#logo{
+		background-image:url('../images/Logo_Superman_small.png');
+		width:120px;
+		height:90px;
+	}
+	.container .jumbotron {
+		background-image:url('../images/Image_Header_768.jpg');
+		height:432px;
+	}
+	#super {
+		margin-bottom:20px;
+	}
+}
+/***** Extra small Device *****/
+@media (max-width:767px) {
+	#collapse-nav .glyphicon {
+		margin-right:10px;
+	}
+	#header-nav .navbar-brand {
+		height:70px;
+	}
+	#header-nav .navbar-toggle {
+		margin-top:15px;
+	}
+	.container .jumbotron {
+		padding:0;
+	}
+	#super, #justice, #enemies{
+		margin-bottom:20px;
+		width:360px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+}
+/***** Super Extra Small Device *****/
+@media (max-width:479px){
+	#super, #justice, #enemies{
+		width:280px;
+	}
+}
