@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+	font-family: 'Montserrat', sans-serif;
+	padding:0;
+	margin:0;
+	font-size:16px;
+	background-color:#000;
+	color:#fff;
+}
+.container {
+	margin:0 auto;
+}
+#header-nav {
+	background-color:#dadada;
+}
+#logo {
+	background:url('logo-batman.png') no-repeat center;
+	height:187px;
+	width:300px;
+	margin:auto;
+}
+#nav-list {
+	padding:0;
+	margin:30px auto 20px;
+	list-style:none;
+	display:inline-block;
+}
+#nav-list li {
+	float:left;
+}
+#nav-list li a {
+	text-decoration:none;
+	color:#000;
+	font-weight:bold;
+	padding:10px 20px;
+}
+#nav-list li a:hover, #nav-list li a:active {
+	color:#fff200;
+	background-color:#000;
+}
+.list {
+	margin-bottom:20px;
+}
+.list .item {
+	position:relative;
+	height:250px;
+	background:url('batman.jpg') no-repeat center;
+}
+
+.list .item h3 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	background:rgba(0,0,0,.8);
+	margin:0;
+	line-height:40px;
+	text-align:center;
+}
+.txt-center {
+	text-align:center;
+}
+.navbar-brand h1 {
+	font-family: 'Barrio', cursive;
+	margin-top:0;
+	font-size:2em;
+	font-weight:bold;
+	color:#c40028;
+  text-shadow: 1px 1px 3px;
+	transition:.4s;
+  -moz-transition:.4s;
+  -webkit-transition:.4s;
+  -o-transition:.4s;
+}
+.jumbotron {
+	width:100%;
+	margin-top:15px;
+	box-shadow:0 0 10px #fff;
+	-moz-box-shadow:0 0 10px #fff;
+	-webkit-box-shadow:0 0 10px #fff;
+}
+.panel-footer {
+	background-color:#dadada;
+}
+.panel-footer span{
+	color:#000;
+}
+/***** Large Device *****/
+@media (min-width:1200px) {
+	.navbar-brand h1:hover{
+		font-size:2.4em;
+	}
+	.jumbotron{
+		background:url('header_batman_1200.jpg') no-repeat center;
+		height:780px;
+	}
+}
+
+@media (max-width:991px) {
+	.list .item {
+		margin-bottom:20px;
+	}
+}
+
+/***** Medium Device *****/
+@media (min-width:992px) and (max-width:1199px) {
+	.jumbotron {
+		background:url('header_batman_992.jpg') no-repeat center;
+		height:645px;
+	}
+}
+/***** Small Device *****/
+@media (min-width:768px) and (max-width:991px) {
+	#logo{
+		background-image:url('../images/Logo_Superman_small.png');
+		width:120px;
+		height:90px;
+	}
+	.jumbotron {
+		background:url('header_batman_992.jpg') no-repeat center;
+		height:499px;
+	}
+}
+/***** Extra small Device *****/
+@media (max-width:767px) {
+	#collapse-nav .glyphicon {
+		margin-right:10px;
+	}
+	#header-nav .navbar-brand {
+		height:70px;
+	}
+	#header-nav .navbar-toggle {
+		margin-top:15px;
+	}
+	.container .jumbotron {
+		padding:0;
+	}
+	#super, #justice, #enemies{
+		margin-bottom:20px;
+		width:360px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.visible-xs {
+		display:block;
+	}
+	.img-responsive{
+		width:100%;
+	}
+	.container{
+		margin:0 15px;
+	}
+}
+/***** Super Extra Small Device *****/
+@media (max-width:479px){
+	#super, #justice, #enemies{
+		width:280px;
+	}
+}
